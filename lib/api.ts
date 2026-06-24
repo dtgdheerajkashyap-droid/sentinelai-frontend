@@ -68,10 +68,12 @@ export async function getRiskDistribution(): Promise<RiskDistributionPoint[]> {
   const safe = MOCK_SCANS.filter((s) => s.riskLevel === "safe").length
   const medium = MOCK_SCANS.filter((s) => s.riskLevel === "medium").length
   const high = MOCK_SCANS.filter((s) => s.riskLevel === "high").length
+  const total = MOCK_SCANS.length
+  const scale = 12480 / total
   return delay([
-    { level: "safe", label: "Safe", count: safe },
-    { level: "medium", label: "Medium", count: medium },
-    { level: "high", label: "High", count: high },
+    { level: "safe", label: "Safe", count: Math.round(safe * scale) },
+    { level: "medium", label: "Medium", count: Math.round(medium * scale) },
+    { level: "high", label: "High", count: Math.round(high * scale) },
   ])
 }
 

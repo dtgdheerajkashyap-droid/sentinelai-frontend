@@ -98,12 +98,12 @@ export function SidebarNav({
         >
           <Avatar className="size-8">
             <AvatarFallback className="bg-primary/15 text-xs font-medium text-primary">
-              AM
+              MD
             </AvatarFallback>
           </Avatar>
           {!collapsed && (
             <div className="flex min-w-0 flex-col leading-tight">
-              <span className="truncate text-sm font-medium">Alex Morgan</span>
+              <span className="truncate text-sm font-medium">M Dheeraj</span>
               <span className="truncate text-xs text-muted-foreground">
                 Security Analyst
               </span>

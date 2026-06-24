@@ -36,7 +36,7 @@ export function DetectionSignalsChart({
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[260px] w-full">
-          <BarChart data={data} margin={{ left: -12, right: 8, top: 8 }}>
+          <BarChart data={data} margin={{ left: 12, right: 8, top: 8 }}>
             <CartesianGrid vertical={false} stroke="var(--border)" />
             <XAxis
               dataKey="signal"

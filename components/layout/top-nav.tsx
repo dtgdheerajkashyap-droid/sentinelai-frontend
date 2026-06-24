@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation"
 import { useState } from "react"
-import { Bell, Menu, PanelLeft, Search, ScanLine, Loader2 } from "lucide-react"
+import { Bell, Menu, PanelLeft, Search, ScanLine, Loader as Loader2 } from "lucide-react"
 import { toast } from "sonner"
 
 import { cn } from "@/lib/utils"
@@ -108,7 +108,7 @@ export function TopNav({
 
         <Avatar className={cn("size-8")}>
           <AvatarFallback className="bg-primary/15 text-xs font-medium text-primary">
-            AM
+            MD
           </AvatarFallback>
         </Avatar>
       </div>

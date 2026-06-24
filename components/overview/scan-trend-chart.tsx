@@ -33,7 +33,7 @@ export function ScanTrendChart({ data }: { data: ScanTrendPoint[] }) {
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[260px] w-full">
-          <AreaChart data={data} margin={{ left: -12, right: 8, top: 8 }}>
+          <AreaChart data={data} margin={{ left: 12, right: 8, top: 8 }}>
             <defs>
               <linearGradient id="fillScanned" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="var(--color-scanned)" stopOpacity={0.35} />

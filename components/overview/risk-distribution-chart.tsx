@@ -20,9 +20,9 @@ import type { RiskDistributionPoint } from "@/lib/types"
 
 const chartConfig = {
   count: { label: "Emails" },
-  safe: { label: "Safe", color: "var(--color-safe)" },
-  medium: { label: "Medium", color: "var(--color-medium)" },
-  high: { label: "High", color: "var(--color-high)" },
+  safe: { label: "Safe" },
+  medium: { label: "Medium" },
+  high: { label: "High" },
 } satisfies ChartConfig
 
 export function RiskDistributionChart({
@@ -79,7 +79,7 @@ export function RiskDistributionChart({
                           y={viewBox.cy}
                           className="fill-foreground text-2xl font-semibold"
                         >
-                          {total}
+                          {total.toLocaleString()}
                         </tspan>
                         <tspan
                           x={viewBox.cx}
@@ -108,7 +108,7 @@ export function RiskDistributionChart({
                 <span className="text-xs text-muted-foreground">{d.label}</span>
               </div>
               <span className="text-sm font-semibold tabular-nums">
-                {d.count}
+                {d.count.toLocaleString()}
               </span>
             </div>
           ))}
