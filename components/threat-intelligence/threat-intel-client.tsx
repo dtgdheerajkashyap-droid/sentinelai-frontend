@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react"
 import useSWR from "swr"
-import { Globe, Hash, UserX, AlertTriangle, ShieldAlert, AlertCircle, ShieldCheck } from "lucide-react"
+import { Globe, Hash, UserX, TriangleAlert as AlertTriangle, ShieldAlert, CircleAlert as AlertCircle, ShieldCheck } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import {
